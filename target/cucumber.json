@@ -1,0 +1,79 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-05-02T01:01:33.027Z",
+        "line": 22,
+        "name": "Verify Post operation for profile",
+        "description": "",
+        "id": ";verify-post-operation-for-profile",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 170096998302,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I Perform POST operation for \"/posts/{profileNo}/profile\" with body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/posts/{profileNo}/profile",
+                  "offset": 30
+                }
+              ],
+              "location": "GetPostTests.i_perform_post_operation_for_with_body(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "profile"
+                ]
+              },
+              {
+                "cells": [
+                  "Sams",
+                  "2"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6524741247,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I should see the body has name as \"Sams\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sams",
+                  "offset": 35
+                }
+              ],
+              "location": "GetPostTests.i_should_see_the_body_has_name_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PostOperationWithBody"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "  Verify different GET operations using REST Assured",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GetPostSteps.feature",
+    "tags": []
+  }
+]
